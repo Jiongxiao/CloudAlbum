@@ -77,7 +77,7 @@ public class MainActivity extends Activity {
                     finish();
                 }
                 else
-                    Toast.makeText(MainActivity.this, "You haven't upload any video!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "You haven't uploaded any video!", Toast.LENGTH_LONG).show();
             }
         });
  
