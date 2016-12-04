@@ -1,7 +1,7 @@
--injars 'E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
--outjars 'E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars /Users/TJX/Documents/HKU/Apps/Assignment2/CameraPhotoVideoUpload/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /Users/TJX/Documents/HKU/Apps/Assignment2/CameraPhotoVideoUpload/app/build/intermediates/multi-dex/debug/componentClasses.jar
 
--libraryjars 'E:\Android\sdk1\build-tools\24.0.2\lib\shrinkedAndroid.jar'
+-libraryjars /Users/TJX/Library/Android/sdk/build-tools/24.0.2/lib/shrinkedAndroid.jar
 
 -forceprocessing
 -dontoptimize
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
 -dontwarn **
--printconfiguration 'E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration /Users/TJX/Documents/HKU/Apps/Assignment2/CameraPhotoVideoUpload/app/build/intermediates/multi-dex/debug/components.flags
 
 
 -keep class com.room2201.camerafileupload.MainActivity {
