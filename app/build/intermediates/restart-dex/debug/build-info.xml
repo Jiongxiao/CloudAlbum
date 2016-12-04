@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="110204087025259"
+    token="-8962153981516932702" >
+
+    <task
+        name="javac"
+        duration="1000" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="211" />
+    <task
+        name="verifier"
+        duration="9" />
+
+    <artifact
+        location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+        type="DEX" />
+
+    <build timestamp="103224931721326" >
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="105537658174826" >
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7ae6809000ff5033afce36c5ae489a9a398960dc\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_917037a3e0733d6216e8342585ed888a2ce69785\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpcore-4.3.3_0aedf19e787be361bfad0af18ca3275d1ec2c531\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.3_bf1fe48978aa2c9d05e4f8f45116c77fa2045896\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_1879b501d824cabfbbb62edb40e7e58093d7882a\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.3_7df3d5ad79f0bb1eb29abcda07fbab514fd3801c\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_0b60cedf8a5c9275432ea4c3fe296d5cc45e8524\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_1e4b7b25cc8d86dd1f260630713582fa82f75994\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpmime-4.3.6_eba02b2c32d46f6a0bcd220b2987ccbce05b8690\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpclient-4.3.6_c85150f2a437d574a3095d646388c194d76f7db1\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="107332869356724"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build timestamp="110204087025259" >
+        <artifact
+            location="E:\AndroidStudioProjects\CameraPhotoVideoUpload\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

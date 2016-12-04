@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Camera File Upload</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="btnVideoUploaded">Video Uploaded</string>
+
+</resources>
