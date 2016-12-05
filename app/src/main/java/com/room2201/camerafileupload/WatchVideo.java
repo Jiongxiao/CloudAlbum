@@ -14,6 +14,8 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -44,7 +46,7 @@ public class WatchVideo extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //  setContentView(R.layout.activity_video_view_demo);
+        setContentView(R.layout.activity_watch_video);
         String fileName = Environment
                 .getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)+"/"+Config.IMAGE_DIRECTORY_NAME+"/"+
                 Config.DOC_NAME;
@@ -54,6 +56,21 @@ public class WatchVideo extends Activity {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        LinearLayout totallinearLayout=new LinearLayout(this);
+        totallinearLayout.setOrientation(LinearLayout.VERTICAL);
+        Button button=new Button(this);
+        button.setBackgroundColor(getResources().getColor(R.color.btn_bg));
+        button.setText("Back To Home Page");
+        button.setTextColor(getResources().getColor(R.color.white));
+        button.setWidth(50);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(WatchVideo.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+        totallinearLayout.addView(button);
 //        InputStream inputStream = getResources().openRawResource(R.raw.li);
         //ScrollView scrollView=(ScrollView)this.findViewById(R.id.scrollview);
         ScrollView scrollView=new ScrollView(this);
@@ -62,10 +79,14 @@ public class WatchVideo extends Activity {
 
         //  ScrollView
         // scrollView.setLayoutParams(lp);
+        WindowManager wm = this.getWindowManager();
+
+        int width = wm.getDefaultDisplay().getWidth();
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
-        LinearLayout.LayoutParams videolp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,600 );
-        LinearLayout.LayoutParams empty = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,100 );
+        LinearLayout.LayoutParams videolp = new LinearLayout.LayoutParams(width,600 );
+        LinearLayout.LayoutParams empty = new LinearLayout.LayoutParams(width,100 );
+       // LinearLayout.LayoutParams scrollparams = new LinearLayout.LayoutParams(width,100 );
         lp.setMargins(100, 30, 0, 0);
         linearLayout.setLayoutParams(lp);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
@@ -132,56 +153,22 @@ public class WatchVideo extends Activity {
         image.setImageBitmap(bitmap);
 */
 
-      /*  final ArrayList<VideoView> videoViews =new ArrayList<VideoView>();
-        for(int i=0;i<url.size();i++){
-            String videoUrl2 =url.get(i);
-            Uri uri = Uri.parse( videoUrl2 );
-            VideoView temp=new VideoView(this);
-            temp.setVideoURI(uri);
-            videoViews.add(temp);
 
-
-        }*/
-        // linearLayout.addView(scrollView,videolp);
-        // final ArrayList<Integer> place =new ArrayList<Integer>();
         for(int i=0;i<image.size();i++){
-            //   place.add(i);
-            // ScrollView scrollView=(ScrollView)this.findViewById(R.id.scrollview);
-            //   scrollView.addView(videoViews.get(i),videolp);
+
             linearLayout.addView(image.get(i),videolp);
             LinearLayout linearLayout1=new LinearLayout(this);
             linearLayout.addView(linearLayout1,empty);
-            /*linearLayout.addView(image.get(i),videolp);
-            linearLayout.addView(image.get(i),videolp);
-            linearLayout.addView(image.get(i),videolp);
-            linearLayout.addView(image.get(i),videolp);
-            linearLayout.addView(image.get(i),videolp);
-            linearLayout.addView(image.get(i),videolp);
-            linearLayout.addView(image.get(i),videolp);*/
-            //  linearLayout.addView(videoViews.get(i),videolp);
-            //  Button button=new Button(this);
 
-            //final int j=1;
-            /*button.setOnClickListener(new View.OnClickListener() {
 
-                @Override
-                public void onClick(View arg0) {
-                    videoViews.get(i).start();
-                  //  TextView textview = (TextView)findViewById(R.id.textView1);
-                    //textview.setText("你点击了Button");
-                }
-            });*/
-            //linearLayout.addView(button);
-
-            //    videoViews[0].start();
 
         }
         scrollView.addView(linearLayout,lp);
-        //   linearLayout.addView(scrollView,videolp);
-        // scrollView.addView(linearLayout,lp);
-        setContentView(scrollView);
-        //  videoViews.get(1).start();
-        //   videoView = (VideoView)this.findViewById(R.id.rtsp_player);
+
+        totallinearLayout.addView(scrollView);
+       // setContentView(scrollView);
+        setContentView(totallinearLayout);
+
     }
 
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)

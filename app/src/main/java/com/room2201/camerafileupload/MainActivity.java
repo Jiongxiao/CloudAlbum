@@ -11,6 +11,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.MediaRecorder;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -76,7 +77,7 @@ public class MainActivity extends Activity {
                     finish();
                 }
                 else
-                    Toast.makeText(MainActivity.this, "You haven't upload any video!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "You haven't uploaded any video!", Toast.LENGTH_LONG).show();
             }
         });
  
@@ -113,7 +114,7 @@ public class MainActivity extends Activity {
         fileUri = getOutputMediaFileUri(MEDIA_TYPE_VIDEO);
  
         // set video quality
-        intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
+        intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 0.5);
  
         intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file
                                                             // name
@@ -214,9 +215,11 @@ public class MainActivity extends Activity {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss",
                 Locale.getDefault()).format(new Date());
         File mediaFile;
+//        MediaRecorder mediaRecorder=new MediaRecorder();
         if (type == MEDIA_TYPE_VIDEO) {
             mediaFile = new File(mediaStorageDir.getPath() + File.separator
                     + "VID_" + timeStamp + ".mp4");
+//            mediaRecorder.se;
         } else {
             return null;
         }

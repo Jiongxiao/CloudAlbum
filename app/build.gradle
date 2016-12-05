@@ -17,7 +17,7 @@ android {
 
     defaultConfig {
         applicationId "com.room2201.camerafileupload"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 21
         multiDexEnabled true
     }
